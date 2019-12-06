@@ -652,9 +652,15 @@ section
 .main_content_scroll
 {
 	width: 100%;
+	color: #100f3a;
+	font-size: 16px;
 	padding-right: 76px;
 	margin-top: 15px;
 	max-height: calc(100% - 183px - 64px);
+}
+.bibtexitem
+{
+	padding-bottom: 10px;
 }
 .mCS-minimal.mCSB_scrollTools .mCSB_draggerRail, .mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail
 {
