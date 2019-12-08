@@ -631,7 +631,7 @@ section
 .main_title_container
 {
 	width: 100%;
-	height: 50px;
+	height: 120px;
 }
 .main_subtitle
 {
@@ -642,11 +642,11 @@ section
 }
 .main_title
 {
-	font-size: 40px;
+	font-size: 65px;
 	font-weight: 800;
 	color: #100f3a;
 	line-height: 0.75;
-	margin-top: 5px;
+	margin-top: 25px;
 	margin-left: -4px;
 }
 .main_content_scroll
@@ -655,7 +655,7 @@ section
 	color: #100f3a;
 	font-size: 16px;
 	padding-right: 76px;
-	margin-top: 15px;
+	margin-top: 40px;
 	max-height: calc(100% - 183px - 64px);
 }
 .bibtexitem
