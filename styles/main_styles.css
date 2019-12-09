@@ -284,8 +284,8 @@ section
 	font-size: 42px;
 	font-weight: 800;
 	color: #100f3a;
-	margin-right: 120px;
-	margin-left: 100px;
+	margin-right: 220px;
+	margin-left: 0px;
 	margin-top: -5px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -469,7 +469,7 @@ section
 .general_info_text a
 {
 	font-size: 14px;
-	color: #7a798c;
+	color: #FFFFFF;
 	line-height: 1.2;
 }
 .general_info_text a
