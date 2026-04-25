@@ -1,277 +1,631 @@
-<!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Tapajit Dey's Personal Homepage</title>
-  <link rel="icon" href="profile-picture.jpeg" type="image/icon type">
-
-  <style>
-    ul#links li {
-      display:inline;
-      padding: 10px;
-    }
-    a.tlk:link, a.tlk:visited, .tlk {
-    background-color: #3bc987;
-    }
-    .model-box {
-      position:   relative;
-      width:      100%;
-      height: 0;
-      padding-top:   60%; /* This is your aspect ratio */ }
-    .model-prebox {
-      position:   relative;
-      width:      100%;
-      height: 0;
-      padding-top:   40%; /* This is your aspect ratio */ }
-    .model {
-      position: absolute;
-      top:      0;
-      left:     0;
-      bottom:   0;
-      right:    0;
-      width:    100%;
-      height:   100%
-    }
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: gray;
-      color: white;
-      text-align: center;
-    }
-    </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+  <title>Tapajit Dey | Software Engineering Researcher</title>
+  <meta name="description" content="Tapajit Dey is a software engineering researcher at Carnegie Mellon University Software Engineering Institute working on software architecture, open source ecosystems, empirical software engineering, and AI-assisted software evolution.">
+  <meta name="author" content="Tapajit Dey">
+  <meta name="keywords" content="Tapajit Dey, software engineering research, Carnegie Mellon University Software Engineering Institute, SEI CMU, AI-assisted software evolution, software architecture modernization, empirical software engineering, open source software, InnerSource, mining software repositories">
+  <link rel="canonical" href="https://tapjdey.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Tapajit Dey | Software Engineering Researcher">
+  <meta property="og:description" content="Software engineering researcher at CMU SEI working on AI-assisted software evolution, architecture modernization, empirical software engineering, open source, and InnerSource.">
+  <meta property="og:url" content="https://tapjdey.github.io/">
+  <meta property="og:image" content="https://tapjdey.github.io/profile-picture.jpeg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tapajit Dey",
+    "url": "https://tapjdey.github.io/",
+    "image": "https://tapjdey.github.io/profile-picture.jpeg",
+    "jobTitle": "Member of Technical Staff Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Carnegie Mellon University Software Engineering Institute",
+      "url": "https://www.sei.cmu.edu/"
+    },
+    "sameAs": [
+      "https://github.com/tapjdey",
+      "https://www.linkedin.com/in/tapajit-dey",
+      "https://scholar.google.com/citations?user=98aCJqwAAAAJ",
+      "https://dblp.org/pid/189/6251.html",
+      "https://orcid.org/0000-0002-1379-8539",
+      "https://conf.researchr.org/profile/tapajitdey"
+    ],
+    "knowsAbout": [
+      "AI-assisted software evolution",
+      "software architecture modernization",
+      "empirical software engineering",
+      "open source software",
+      "InnerSource",
+      "mining software repositories"
+    ]
+  }
+  </script>
+  <link rel="icon" href="profile-picture.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-        <li><span>..</span></li>
-        <li><div style="font-family: 'Copperplate', Verdana, Geneva, Tahoma, sans-serif; font-size: 40px; color: whitesmoke;"><b>Tapajit Dey</b></div></li>
-        <li><span>..</span></li>
-        <!-- <li><a href="index.html">Home</a></li> -->
-        <li><a href="#research">Research</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#publications">Publications</a></li> 
-        <li><a href="blogs.html">Blog</a></li>
-        <li><a href="files/Tapajit_Dey_CV.pdf" target="_blank">CV</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-          <!-- Entries Column -->
-          <div class="col-md-3">
-              
-            <!-- Image & Contact Info-->
-              <img class="img-responsive" src="profile-picture.jpeg" height="350" width="350" alt=""><br>
-              <ul id="links">
-                <li><a href="https://github.com/tapjdey"><i class="fa fa-github fa-2x" aria-hidden="true" style="color:black"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/tapajit-dey"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color:black"></i></a></li>
-                <li><a href="https://www.twitter.com/DeyTapajit"><i class="fa fa-twitter fa-2x" aria-hidden="true" style="color:black"></i></a></li>
-                <li><a href="https://stackoverflow.com/users/1613640/tapajit-dey"><i class="fa fa-stack-overflow fa-2x" aria-hidden="true" style="color:black"></i></a></li>
-              </ul>
-              <!-- <div style="margin-top:3%; text-align:justify;">       -->
-              <p><b>Email:</b> tdey<i class="fa fa-at"></i>sei<i class="fa fa-circle" aria-hidden="true" style="font-size:3px;"></i>cmu<i class="fa fa-circle" aria-hidden="true" style="font-size:3px;"></i>edu<br>
-              <dd><a href="https://scholar.google.com/citations?user=98aCJqwAAAAJ" target="_blank">Google Scholar</a></dd>  
-              <dd><a href="https://dblp.org/pid/189/6251.html">DBLP</a></dd>
-              <dd><a href="https://conf.researchr.org/profile/tapajitdey">Researchr profile</a></dd>
-              <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-1379-8539" href="https://orcid.org/0000-0002-1379-8539" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">0000-0002-1379-8539</a></div>
-              <!-- <dd><a href="files/Tapajit_Dey_CV.pdf" target="_blank">Download CV</a></dd> -->
-              <dd><a href="https://youtube.com/playlist?list=PLrYIYBqPz6TmGwaV9PzQbGmDqtL0ALYWJ">A Playlist of my talks from YouTube</a></dd>
-              <!-- <dd><a href="files/Research Statement.pdf" target="_blank">Download Research Statement (Generic)</a></dd>
-              <dd><a href="files/Teaching Statement.pdf" target="_blank">Download Teaching Statement (Generic)</a></dd>
-              <dd><a href="files/Diversity Statement.pdf" target="_blank">Download Diversity Statement (Generic)</a></dd> -->
-              </p>     
-          </div>
-
-          <!-- Main Info -->
-          <div class="col-md-9">
-
-            <div class="row">
-              <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Introduction</b></div>
-              <p>
-                <br>
-                Tapajit Dey is a MTS Researcher at the <a href="https://www.sei.cmu.edu/">
-                Software Engineering Institute</a> in <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, 
-                working in the Architecture Design, Analysis and Automation Team.
-                <br>
-                He obtained his Ph.D. in Computer Science from the <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a> (UTK)
-                with <a href="http://mockus.org/">Dr. Audris Mockus</a>, with his Ph.D. research focusing on applying data mining and 
-                empirical software engineering techniques for analyzing software ecosystems and software supply chains.
-                Then, he worked as a Postdoctoral Researcher (later promoted to Research Fellow) at <a href="https://www.lero.ie/">Lero, the Science Foundation 
-                Ireland Research Centre for Software</a> at the <a href="https://www.ul.ie/">University of Limerick</a> (UL), 
-                with <a href="https://www.lero.ie/people/brian-fitzgerald">Prof. Brian Fitzgerald</a> on InnerSource and Open Source Software Development, 
-                where he was also one of the founding members of the <a href="https://sfi-lero.github.io/OSPO/">Lero Open Source Program Office</a>.<br>
-                He received his Bachelors and Masters Degree (under the Dual-Degree program) from the <a href="http://www.iitkgp.ac.in/">Indian 
-                Institute of Technology (IIT), Kharagpur</a> in Electronics and Electrical Communication 
-                Engineering and worked in <b>IBM</b> for 3 years before joining Ph.D. <br></br>
-                His research interests comprise the topics of Empirical Software Engineering, Open Source and InnerSource software development, Human Aspects of Software Engineering, 
-                Mining Software Repositories, Data Analysis, and Role of Bots/Automation in Software Development.
-              </p>
-            </div>
-            <!-- <div style="font-family: Arial, Helvetica, sans-serif; font-size: 24px;"><b>I'm on the job market and am looking for positions globally starting in mid-2023. Please <a href="mailto:tapjdey@gmail.com">let me know</a> if you have any leads or are interested in having a discussion!</b></div> -->
-            <!-- NEWS -->
-            <div class="row" style="margin-bottom:1cm;">
-                <br>
-                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Latest News (May 2023)</b></div>
-                <ul>
-                    <li>I'll be serving as a PC member in ICSE'24 Technical Track.</li>
-                    <li>I'll be serving as a PC member in PROMISE 2023.</li>
-                    <li>Robert Healy, a professional Ph.D. student I am co-supervising at the University of Limerick, has had a 
-                      paper titled <a href="https://link.springer.com/chapter/10.1007/978-3-031-33976-9_2">"A Novel Technique to Assess Agile Systems for Stability"</a>
-                       accepted at the XP 2023 conference.
-                    </li>
-                    </ul>
-            </div>
-            
-            
-            
-        </div>
-        <br></br>
-        <!-- <div class="row">
-          <br>
-          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" id="research"><b>Active Research Projects</b></div>
-          <ul>
-            <li><b>TREES Project:</b> Enabling InnerSource software development/Corporate Software Engineering 
-              Capability at Huawei as part of the <a href="https://trees.lero.ie/">TREES</a> project. </li>
-              <ul>
-                <li> <a href="https://tapjdey.github.io/InnerSource_Survey_2020/index.html">Results of the State of the InnerSource survey 2020 </a> [<a href="https://youtu.be/-XWBzcYuvxA" target="_top"> Video of the Talk</a> presented at the <a href="http://innersourcecommons.org/events/isc-apac-dec-2020/">2020 APAC InnerSource Commons summit</a>] </li>
-                <li><a href="https://github.com/tapjdey/InnerSource_Project_Fitness">A tool for estimating the "Fitness" of a project for InnerSource style development.</a> (Can be translated to English and Chinese on the fly)</li>
-                <li>Our proposed model for assessing InnerSource-readiness of a candidate project has been accepted as a Pattern in <a href="https://github.com/InnerSourceCommons/InnerSourcePatterns/blob/master/patterns/1-initial/good-first-project.md">InnerSource Commons</a>.</li>
-              </ul>
-            <li><b>Open Source Newcomers:</b> Facilitating the success of new developers and projects joining the Open Source ecosystem. </li>
-            <ul>
-        </div>  
-        <div class="row">
-          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Past/Dormant Research Projects</b></div>
-          <ul>
-            <li>    Research on code-commit bot detection.</li>
-            <li>    Software Supply Chain: Exploring the Effects of Interdependencies in a Software Ecosystem on Popularity.</li>
-            <li>    Predicting Pull Request Quality.</li>
-            <li>	  Effects of Software Usage on Perceived Quality of a Software.</li>
-          </ul>
-        </div>      
-        <br> -->
-        <!-- Skills, Expertise, Research Interests -->
-          <div class="row">
-            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Other interests</b></div>
-            <ul>
-              <li>
-              I am a staunch supporter of the 
-              <a href="http://www.unesco.org/new/en/communication-and-information/portals-and-platforms/goap/open-science-movement/">Open Science Movement</a>,
-              and support making knowledge accessible to everyone. To that end, I am really passionate about the success of the Open Source movement.</li>
-              <li>
-              I also feel scholars around the world should do everything they can to devise ways of mitigating the effects of climate change as much as possible. 
-              COVID-19 has shown everyone what the collective effort of scientists around the world can achieve and I'm hopeful we can do something about climate change as well.
-              To that end, I'm exploring how I myself can contribute to Green technologies.</li>
-              <li>
-              I'm a big fan of <a href="https://www.youtube.com/user/Vsauce">Vsauce</a>, 
-              <a href="https://www.youtube.com/user/1veritasium">Veritasium</a>, 
-              <a href="https://www.youtube.com/user/Kurzgesagt">Kurzgesagt</a>, 
-              <a href="https://www.youtube.com/user/scishow">SciShow</a>, and similar informative YouTube channels.</li>
-              <li>
-              In terms of coding, I prefer using <i>R</i> (for statistical analysis), <i>shell 
-              script</i> (for running small errands and big jobs), and <i>Python</i> (everything else).
-              </li>
-            </ul>
-          </div> 
-          <br>
-          <!-- Teaching -->
-          <div class="row">
-            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" id="teaching"><b>Teaching</b></div>
-            <ul>
-              <li><b>Fall 2020 - Spring 2023 &mdash;</b> <i>Lecturer</i>: CS4911 - Introduction to Information Technology @ UL </li>
-              <i>Modified the course and assessment to conform with COVID-19 related restrictions & virtual teaching requirements, 
-              included new topics like Cyber Security, Edge & Quantum Computing, and modernized the rest of the lecture topics to include latest developments.</i>
-              <li> <b>Spring 2017 &mdash;</b> <i>Teaching Assistant:</i> <a href="http://web.eecs.utk.edu/~bvanderz/teaching/cs365Sp17/general_info.html"> Programming Languages and Systems</a> @ UTK</li>
-              <li> <b>Fall 2016 &mdash; </b> <i>Teaching Assistant:</i> Fundamentals of Digital Archeology  @ UTK</li>
-              <li><b>Spring 2016 &mdash; </b> <i>Teaching Assistant:</i> <a href="http://web.eecs.utk.edu/~mbeck/classes/Spring16-cs361/"> Operating Systems</a>  @ UTK</li>
-              <li><b> Fall 2015 &mdash; </b> <i>Teaching Assistant:</i> <a href="https://github.com/fdac15"> Fundamentals of Digital Archeology  </a>  @ UTK</li>
-            </ul>
-          </div>
-
-        <br>
-        <!-- Positions & Awards -->
-        <div class="row">
-            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" ><b> Notable Positions, Awards, and Recognitions</b></div>
-            <br>
-            <ul>
-                <li> <b>[2024] -</b> Will serve as a PC Member (Technical Track) in the ICSE 2024 conference.</li>
-                <li> <b>[2023] -</b> Will serve as a PC Member in the <a href="https://promiseconf.github.io/2023/index.html">PROMISE'23 conference.</a></li>
-                <li> <b>[2023] -</b> Served as the <a href="https://conf.researchr.org/committee/msr-2023/msr-2023-organizing-committee">Publicity & Social Media Co-Chair</a> and <a href="https://conf.researchr.org/track/msr-2023/msr-2023-mining-challenge">Mining Challenge PC Member</a> in the MSR 2023 conference.</li>
-                <li> <b>[2023] -</b> Served as a Program Committee member (Technical Track, Poster Track, Artifact Evaluation Track) in the <a href="https://conf.researchr.org/committee/icse-2023/icse-2023-technical-track-programme-committee">ICSE'23 conference.</a></li> 
-                <li> <b>[2022] -</b> Served as the Proceedings Chair in the <a href="https://promiseconf.github.io/2022/index.html">PROMISE'22 conference.</a></li>
-                <li> <b>[2022] -</b> Served as <a href="https://conf.researchr.org/committee/msr-2022/msr-2022-organizing-committee">Publicity & Social Media Co-Chair</a>, 
-                  <a href="https://conf.researchr.org/committee/msr-2022/msr-2022-shadow-pc-shadow-pc-advisors"> Committee Member in Shadow PC Advisors within the Shadow PC-track</a>,  
-                  and <a href="https://conf.researchr.org/committee/msr-2022/msr-2022-technical-papers-program-committee">Program Committee member (Technical Track)</a> in the MSR 2022 conference.</li>               
-                <li> <b>[2022] -</b> Received the <a href="https://twitter.com/msrconf/status/1520584652997730306">"Distinguished Reviewer Award"</a> for MSR 2022 conference (Technical Track). </li>          
-                <li> <b>[2021] -</b> Received the <a href="https://twitter.com/msrconf/status/1390444181655539716">"Distinguished Reviewer Award"</a> for MSR 2021 conference (Technical Track). </li>
-                <li> <b>[2021] -</b> Served as a Program Committee member (Technical Track) in the <a href="https://2021.msrconf.org/committee/msr-2021-technical-papers-program-committee">MSR'21 conference.</a></li>
-                <li> <b>[2021] -</b> Served as a Program Committee member in the <a href="https://www.oss2021.org/committee/oss-2021-papers-program-committee">OSS'21 conference.</a></li>
-                <li> <b>[2019] -</b> Our paper  <i>"Patterns of Effort Contribution and Demand and User Classification based on Participation Patterns in NPM Ecosystem"</i> received the <b>Best Paper Award </b> at the <a href="http://promisedata.org/2019/index.html">PROMISE - 2019</a> conference. </li>
-                <li> <b>[2017] -</b> Received the <i>Best Graduate Research Assistant</i> award and scholarshop from the University of Tennessee EECS department.</li>
-            </ul>
-        </div>
-      <!--  
-        <!-- Publications -->
-        <div class="col-md-12" >  
-          <br>  
-          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" id="publications"><b>Publications - Peer Reviewed & Published</b></div>
-            
-          <div class="model-box">
-            <iframe class="model" src="pubs.html" frameborder="0" allowfullscreen="" ></iframe>
-          </div>
-          <br>
-          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" id="publications"><b>Preprints, Datasets, Misc.</b></div>
-            
-          <div class="model-prebox">
-            <iframe class="model" src="misc.html" frameborder="0" allowfullscreen="" ></iframe>
-          </div>
-
-        </div>
-            
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Tapajit Dey home">Tapajit Dey</a>
+      <div class="nav-links">
+        <a href="#about">Bio</a>
+        <a href="#upcoming">Upcoming</a>
+        <a href="#research">Research</a>
+        <a href="#mentoring">Mentoring</a>
+        <a href="#publications">Publications</a>
+        <a href="#recognitions">Recognitions</a>
+        <a href="#service">Service</a>
       </div>
-      <div class="footer">
-        Content Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tapajit Dey &mdash; All rights reserved | This template is made with <a style="color:#ebeff3;font-size:0.8em;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Software Engineering Researcher</p>
+        <h1>Tapajit Dey</h1>
+        <p class="lede">
+          I study how software is built, maintained, reused, and evolved across
+          organizations and open source ecosystems.
+        </p>
+        <p>
+          I am a Member of Technical Staff Researcher at the
+          <a href="https://www.sei.cmu.edu/">Software Engineering Institute</a> at
+          <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, working in
+          the AI Workflow and Architecture Modernization group. My research
+          connects empirical software engineering, software architecture,
+          open source and InnerSource development, mining software repositories,
+          and applied AI for software evolution.
+        </p>
+        <p>
+          Contact me at <a class="email-link" href="#" data-user="tapajitdey" data-domain="cmu" data-tld="edu">tapajitdey [at] cmu [dot] edu</a>
+        </p>
       </div>
-    </div>
-    <!-- /.container -->
-    -->
-    
-    
+      <aside class="profile-panel" aria-label="Profile summary">
+        <img src="profile-picture.jpeg" alt="Portrait of Tapajit Dey">
+        <div>
+          <p class="profile-title">Carnegie Mellon University Software Engineering Institute</p>
+          <p>Pittsburgh, PA, USA</p>
+        </div>
+        <a class="profile-cv" href="files/Tapajit_Dey_CV.pdf">Download CV</a>
+        <ul class="profile-links" aria-label="External profiles">
+          <li><a href="https://github.com/tapjdey">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/tapajit-dey">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=98aCJqwAAAAJ">Google Scholar</a></li>
+          <li><a href="https://dblp.org/pid/189/6251.html">DBLP</a></li>
+          <li><a href="https://orcid.org/0000-0002-1379-8539">ORCID</a></li>
+          <li><a href="https://conf.researchr.org/profile/tapajitdey">Researchr</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Bio</p>
+        <h2>Short bio</h2>
+      </div>
+      <div class="content-grid">
+        <div>
+          <p>
+            Tapajit Dey is a Member of Technical Staff Researcher at the
+            <a href="https://www.sei.cmu.edu/">Software Engineering Institute</a> at
+            <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, working
+            in the AI Workflow and Architecture Modernization group. His current
+            work includes applied research on software architecture, large-scale
+            refactoring, software project selection, open source project
+            categorization, and generative AI for software translation and library
+            replacement.
+          </p>
+          <p>
+            He completed his Ph.D. in Computer Science at the
+            <a href="https://www.utk.edu/">University of Tennessee, Knoxville</a>
+            with <a href="http://mockus.org/">Dr. Audris Mockus</a>, where his
+            research focused on applying data mining and empirical software
+            engineering techniques to analyze software ecosystems and software
+            supply chains. Before joining SEI, he was a Postdoctoral Researcher
+            and later Research Fellow at
+            <a href="https://www.lero.ie/">Lero, the Science Foundation Ireland
+            Research Centre for Software</a> at the
+            <a href="https://www.ul.ie/">University of Limerick</a>, working with
+            <a href="https://www.lero.ie/people/brian-fitzgerald">Prof. Brian
+            Fitzgerald</a> on InnerSource and open source software development.
+          </p>
+          <p>
+            He was one of the founding members of the
+            <a href="https://sfi-lero.github.io/OSPO/">Lero Open Source Program
+            Office</a>. He received his Bachelor's and Master's degrees under the
+            dual-degree program from the
+            <a href="http://www.iitkgp.ac.in/">Indian Institute of Technology,
+            Kharagpur</a> in Electronics and Electrical Communication Engineering
+            and worked at IBM India Software Lab for three years before starting
+            his Ph.D.
+          </p>
+        </div>
+        <div class="fact-list" aria-label="Professional background">
+          <div>
+            <span>Current role</span>
+            <strong>MTS Researcher, SEI-CMU</strong>
+          </div>
+          <div>
+            <span>Research roots</span>
+            <strong>Empirical software engineering; data mining; software evolution</strong>
+          </div>
+          <div>
+            <span>Prior industry experience</span>
+            <strong>IBM India Software Lab</strong>
+          </div>
+          <div>
+            <span>Education</span>
+            <strong>Ph.D. UT Knoxville; <br> B.Tech. + M.Tech. IIT Kharagpur</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="upcoming">
+      <div class="section-heading compact">
+        <p class="eyebrow">Upcoming</p>
+        <h2>Upcoming roles and accepted work.</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <time>2027</time>
+          <p>Artifacts Evaluation Co-Chair for the ICSE 2027 Artifact Evaluation Track.</p>
+        </li>
+        <li>
+          <time>2026</time>
+          <p>Accepted paper at ICSE 2026 SEET: <em>Prompting Without Principles: Are Students Transferring Software Engineering Knowledge to LLM Use?</em></p>
+        </li>
+        <li>
+          <time>2026</time>
+          <p>Program committee member for the MSR 2026 Technical Papers Track.</p>
+        </li>
+        <li>
+          <time>2026</time>
+          <p>Program committee member for the ESEC/FSE 2026 Tool Demonstrations Track.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section tinted" id="research">
+      <div class="section-heading">
+        <p class="eyebrow">Research</p>
+        <h2>Understanding and improving how software is built, maintained, and reused.</h2>
+      </div>
+      <div class="tile-grid">
+        <article class="tile featured">
+          <h3>AI-assisted software evolution</h3>
+          <p>
+            My current projects focus on generative AI for code translation,
+            library replacement, architecture modernization, and the responsible
+            integration of AI into software engineering workflows.
+          </p>
+        </article>
+        <article class="tile">
+          <h3>Software architecture automation</h3>
+          <p>
+            Applied research on architecture design, analysis, refactoring, and
+            validation workflows for large and complex software systems, now in
+            the context of AI workflow and architecture modernization.
+          </p>
+        </article>
+        <article class="tile">
+          <h3>Open source ecosystems</h3>
+          <p>
+            Large-scale empirical studies of open source supply chains, project
+            selection, project health, contributor behavior, and ecosystem structure.
+          </p>
+        </article>
+        <article class="tile">
+          <h3>InnerSource and collaboration</h3>
+          <p>
+            Research on InnerSource adoption, incentives, newcomer pathways, and
+            organizational practices for collaborative software development.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Current and recent funded research.</h2>
+      </div>
+      <div class="project-list">
+        <article>
+          <h3>Scaling Code Translation with Generative AI</h3>
+          <p>SEI-CMU project team member. Fiscal Year 2025 project, funded at $1.5M, investigating how generative AI can support software translation across languages at scale. Contributed to the funding proposal with James Ivers.</p>
+        </article>
+        <article>
+          <h3>Shift Left with Generative AI</h3>
+          <p>SEI-CMU project team member. Fiscal Year 2024 project, funded at $500K, exploring generative AI for automating large-scale library replacement. Contributed to the funding proposal with Ipek Ozkaya, James Ivers, and Robert Edman.</p>
+        </article>
+        <article>
+          <h3>TREES Research Program</h3>
+          <p>At Lero, led and contributed to work on InnerSource adoption and open source newcomers within the €6M Trustworthy Responsible Efficient Engineering of Software research program, in collaboration with industry partners.</p>
+        </article>
+        <article>
+          <h3>Open Research Training in Ireland</h3>
+          <p>Activity coordinator for TROPIC, a €190K National Open Research Forum-funded program to develop and roll out open research training across Ireland and across disciplines.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tinted" id="mentoring">
+      <div class="section-heading">
+        <p class="eyebrow">Teaching &amp; Mentoring</p>
+        <h2>Teaching, supervision, and research mentorship.</h2>
+      </div>
+      <div class="teaching-grid">
+        <article>
+          <h3>Teaching</h3>
+          <ol class="detail-list">
+            <li>
+              <strong>Fall 2020 - Spring 2023, University of Limerick</strong>
+              <span>Co-Instructor / Lecturer, CS4911: Introduction to Information Technology. Co-instructed with Prof. Brian Fitzgerald for first- and second-year undergraduates. Updated course evaluation for COVID restrictions, designed end-of-semester projects and rubrics, handled grading, and renovated the course to include cybersecurity, edge computing, quantum computing, current IT developments, and Universal Design for Learning guidelines.</span>
+            </li>
+            <li>
+              <strong>Universal Design for Learning training</strong>
+              <span>Completed Universal Design for Learning certification/training and used that training while renovating CS4911 at the University of Limerick.</span>
+            </li>
+            <li>
+              <strong>Spring 2017, University of Tennessee</strong>
+              <span>Teaching Assistant, Programming Languages and Systems. Graded weekly assignments and the midterm exam and delivered an introductory Python lecture.</span>
+            </li>
+            <li>
+              <strong>Fall 2016 and Fall 2015, University of Tennessee</strong>
+              <span>Teaching Assistant, Fundamentals of Digital Archeology. Graded assignments and supported class activities.</span>
+            </li>
+            <li>
+              <strong>Spring 2016, University of Tennessee</strong>
+              <span>Teaching Assistant, Operating Systems. Graded weekly assignments and the midterm exam.</span>
+            </li>
+          </ol>
+        </article>
+        <article>
+          <h3>Mentoring</h3>
+          <ol class="detail-list">
+            <li>
+              <strong>Doctoral co-supervision</strong>
+              <span>Co-supervised Robert Healy through doctoral completion, together with Prof. Brian Fitzgerald and Prof. Kieran Conboy, on scaling Scrum with stable queuing systems and mixed-method evaluation of agile systems.</span>
+            </li>
+            <li>
+              <strong>Doctoral supervision support</strong>
+              <span>Supervised Swarna Pundir for one year with Prof. Conor Ryan on AI models for fault prediction and debugging during the software development life cycle.</span>
+            </li>
+            <li>
+              <strong>Master's thesis supervision, Summer 2022</strong>
+              <span>Supervised four Artificial Intelligence and Machine Learning master's projects on Twitter product-user feedback sentiment analysis, GitHub project text classification, Amazon product reviews and market basket analysis, and movie revenue prediction.</span>
+            </li>
+            <li>
+              <strong>Master's thesis supervision, Summer 2021</strong>
+              <span>Supervised a master's project on detecting toxic comments on Stack Overflow using BERT.</span>
+            </li>
+            <li>
+              <strong>Thesis committees</strong>
+              <span>Served on thesis committees for master's and undergraduate students in artificial intelligence, machine learning, and software analytics.</span>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Publications</p>
+        <h2>Representative publications and artifacts.</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <h3>CROSS: A Contributor-Project Interaction Lifecycle Model for Open Source Software</h3>
+          <p>Tapajit Dey, Brian Fitzgerald, and Sherae Daniel. HICSS 2025.</p>
+          <p class="links"><a href="https://arxiv.org/pdf/2409.08267">Preprint</a></p>
+        </article>
+        <article class="publication">
+          <h3>Smarter Project Selection for Software Engineering Research</h3>
+          <p>Tapajit Dey, Jonathan Loungani, and James Ivers. PROMISE 2024.</p>
+          <p class="links"><a href="https://dl.acm.org/doi/10.1145/3663533.3664037">DOI</a></p>
+        </article>
+        <article class="publication">
+          <h3>Comparing Stability and Sustainability in Agile Systems</h3>
+          <p>Robert Healy, Kieran Conboy, Tapajit Dey, Edwin Lewzey, and Brian Fitzgerald. XP 2024.</p>
+          <p class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-61154-4_9">Publication</a></p>
+        </article>
+        <article class="publication">
+          <h3>A Novel Technique to Assess Agile Systems for Stability</h3>
+          <p>Robert Healy, Tapajit Dey, Kieran Conboy, and Brian Fitzgerald. XP 2023.</p>
+          <p class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-33976-9_2">Publication</a></p>
+        </article>
+        <article class="publication">
+          <h3>Knights and Gold Stars: A Tale of InnerSource Incentivization</h3>
+          <p>Tapajit Dey, Willem Jiang, and Brian Fitzgerald. IEEE Software, 2022.</p>
+          <p class="links"><a href="https://doi.org/10.1109/MS.2022.3192647">DOI</a></p>
+        </article>
+        <article class="publication">
+          <h3>Representation of Developer Expertise in Open Source Software</h3>
+          <p>Tapajit Dey, Andrey Karnauch, and Audris Mockus. ICSE 2021.</p>
+          <p class="links">
+            <a href="https://doi.org/10.1109/ICSE43902.2021.00094">DOI</a>
+            <a href="https://docs.google.com/presentation/d/1ph1OA9jydi2FYWIR27WgreXhpEOfCKNYNRUPWqivaro/edit?usp=sharing">Slides</a>
+            <a href="https://youtu.be/h7g7qKNMS7s">Talk video</a>
+          </p>
+        </article>
+      </div>
+      <p class="section-note">
+        For the full and current publication record, see
+        <a href="https://scholar.google.com/citations?user=98aCJqwAAAAJ">Google Scholar</a>,
+        <a href="https://dblp.org/pid/189/6251.html">DBLP</a>, and my
+        <a href="files/Tapajit_Dey_CV.pdf">CV</a>.
+      </p>
+    </section>
+
+    <section class="section" id="records">
+      <div class="section-heading">
+        <p class="eyebrow">Publication Records</p>
+        <h2>Publication and presentation records.</h2>
+      </div>
+      <div class="archive-table" role="region" aria-label="Publication and talk archive" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Work</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Records</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Why Program Increment Estimates Miss: Hidden Variables for Planning</td>
+              <td>Software Excellence Alliance Monthly Tech Talk, February 2026</td>
+              <td><a href="https://softwareexcellencealliance.org/tech-talks/2026-02/video">Video</a></td>
+            </tr>
+            <tr>
+              <td>CROSS: A Contributor-Project Interaction Lifecycle Model for Open Source Software</td>
+              <td>HICSS 2025</td>
+              <td><a href="https://arxiv.org/pdf/2409.08267">Preprint</a></td>
+            </tr>
+            <tr>
+              <td>Smarter Project Selection for Software Engineering Research</td>
+              <td>PROMISE 2024</td>
+              <td><a href="https://dl.acm.org/doi/10.1145/3663533.3664037">DOI</a></td>
+            </tr>
+            <tr>
+              <td>Comparing Stability and Sustainability in Agile Systems</td>
+              <td>XP 2024</td>
+              <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-61154-4_9">Publication</a></td>
+            </tr>
+            <tr>
+              <td>Representation of Developer Expertise in Open Source Software</td>
+              <td>ICSE 2021</td>
+              <td><a href="https://doi.org/10.1109/ICSE43902.2021.00094">DOI</a> <a href="https://ieeexplore.ieee.org/iel7/9401807/9401950/09401957.pdf">Preprint</a> <a href="https://docs.google.com/presentation/d/1ph1OA9jydi2FYWIR27WgreXhpEOfCKNYNRUPWqivaro/edit?usp=sharing">Slides</a> <a href="https://youtu.be/h7g7qKNMS7s">Video</a> <a href="archive/legacy/pubs_bib.html#dey2021skillspace">Bib</a></td>
+            </tr>
+            <tr>
+              <td>Effect of Technical and Social Factors on Pull Request Quality for the NPM Ecosystem</td>
+              <td>ESEM 2020</td>
+              <td><a href="https://doi.org/10.1145/3382494.3410685">DOI</a> <a href="https://arxiv.org/pdf/2007.04816">Preprint</a> <a href="https://docs.google.com/presentation/d/1G3JQtCzOqOktj40i_XvwWbL7vJCOjO86RzQvU_h1tOY/edit?usp=sharing">Slides</a> <a href="https://youtu.be/1L_cqSTEPmU">Video</a> <a href="archive/legacy/pubs_bib.html#dey2020pullrequest">Bib</a></td>
+            </tr>
+            <tr>
+              <td>Detecting and Characterizing Bots That Commit Code</td>
+              <td>MSR 2020</td>
+              <td><a href="https://doi.org/10.1145/3379597.3387478">DOI</a> <a href="https://arxiv.org/pdf/2003.03172">Preprint</a> <a href="https://drive.google.com/file/d/12mI73UhOS0mu_F7sA2JJSydovzhpu5on/view?usp=sharing">Slides</a> <a href="https://youtu.be/3x-GfcbAR4E">Video</a> <a href="archive/legacy/pubs_bib.html#dey2020botdetection">Bib</a></td>
+            </tr>
+            <tr>
+              <td>An Exploratory Study of Bot Commits</td>
+              <td>ICSE Workshops 2020</td>
+              <td><a href="https://doi.org/10.1145/3387940.3391502">DOI</a> <a href="https://arxiv.org/pdf/2003.07961">Preprint</a> <a href="https://drive.google.com/file/d/1k6IF8xXHONu8DkN0k4AFqKv8jrmB116a/view?usp=sharing">Slides</a> <a href="https://youtu.be/5tc7OQ9AV-k">Video</a> <a href="archive/legacy/pubs_bib.html#dey2020botse">Bib</a></td>
+            </tr>
+            <tr>
+              <td>Patterns of Effort Contribution and Demand in the NPM Ecosystem</td>
+              <td>PROMISE 2019</td>
+              <td><a href="https://doi.org/10.1145/3345629.3345634">DOI</a> <a href="https://arxiv.org/pdf/1907.06538">Preprint</a> <a href="https://docs.google.com/presentation/d/1flzlAKL0nfp9K75PSTG7NPwCmmCuwV0zRv1sAjwSm38/edit?usp=sharing">Slides</a> <a href="archive/legacy/pubs_bib.html#dey2019patterns">Bib</a></td>
+            </tr>
+            <tr>
+              <td>Modeling Relationship between Post-Release Faults and Usage in Mobile Software</td>
+              <td>PROMISE 2018</td>
+              <td><a href="https://doi.org/10.1145/3273934.3273941">DOI</a> <a href="https://par.nsf.gov/servlets/purl/10106642">Preprint</a> <a href="https://docs.google.com/presentation/d/15dW0_xgmrWm_LlBG0HERILrzssLtRntakjTs9Atbsjk/edit?usp=sharing">Slides</a> <a href="archive/legacy/pubs_bib.html#dey2018usageQuality">Bib</a></td>
+            </tr>
+            <tr>
+              <td>Are Software Dependency Supply Chain Metrics Useful in Predicting Change of Popularity of NPM Packages?</td>
+              <td>PROMISE 2018</td>
+              <td><a href="https://doi.org/10.1145/3273934.3273942">DOI</a> <a href="https://par.nsf.gov/servlets/purl/10106641">Preprint</a> <a href="https://docs.google.com/presentation/d/1sk6PTop_YnzJoVr5twvqbce1TI-lsKnMnesHMYi_eVc/edit?usp=sharing">Slides</a> <a href="archive/legacy/pubs_bib.html#dey2018dependency">Bib</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="section-note">
+        The earlier generated publication pages are preserved as source evidence in
+        <a href="archive/legacy/pubs.html">the full publication record</a> and
+        <a href="archive/legacy/misc.html">the dataset and preprint record</a>.
+      </p>
+    </section>
+
+    <section class="section tinted" id="recognitions">
+      <div class="section-heading">
+        <p class="eyebrow">Recognitions</p>
+        <h2>Awards and recognitions with evidence links where available.</h2>
+      </div>
+      <ol class="record-list">
+        <li>
+          <time>2022</time>
+          <div>
+            <h3>YERUN Open Science Award</h3>
+            <p>
+              Awarded to the Lero Open Science Committee by the Young European
+              Research Universities Network.
+              <a href="https://yerun.eu/2023/02/yerun-open-science-awards-2022-congratulations-to-the-winners/">Award announcement</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <time>2022</time>
+          <div>
+            <h3>Distinguished Reviewer Award, MSR 2022 Technical Track</h3>
+            <p><a href="https://twitter.com/msrconf/status/1520584652997730306">Award evidence</a></p>
+          </div>
+        </li>
+        <li>
+          <time>2021</time>
+          <div>
+            <h3>Distinguished Reviewer Award, MSR 2021 Technical Track</h3>
+            <p><a href="https://twitter.com/msrconf/status/1390444181655539716">Award evidence</a></p>
+          </div>
+        </li>
+        <li>
+          <time>2019</time>
+          <div>
+            <h3>Best Paper Award, PROMISE 2019</h3>
+            <p>
+              Awarded for <em>Patterns of Effort Contribution and Demand and User
+              Classification based on Participation Patterns in NPM Ecosystem</em>.
+              <a href="http://promisedata.org/2019/index.html">Conference record</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <time>2017</time>
+          <div>
+            <h3>Best Graduate Research Assistant</h3>
+            <p>University of Tennessee, Knoxville, College of Engineering.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="service">
+      <div class="section-heading">
+        <p class="eyebrow">Service</p>
+        <h2>Professional service to the software engineering research community.</h2>
+      </div>
+      <div class="service-role-grid">
+        <article class="service-panel leadership">
+          <h3>Leadership and chair roles</h3>
+          <ol class="service-items">
+            <li>
+              <time>2027</time>
+              <div>
+                <span class="role-label">Co-Chair</span>
+                <strong>ICSE Artifact Evaluation Track</strong>
+                <span>International Conference on Software Engineering.</span>
+              </div>
+            </li>
+            <li>
+              <time>2023</time>
+              <div>
+                <span class="role-label">Co-Chair</span>
+                <strong>MSR Publicity and Social Media</strong>
+                <span>20th Working Conference on Mining Software Repositories.</span>
+              </div>
+            </li>
+            <li>
+              <time>2023</time>
+              <div>
+                <span class="role-label">Co-Chair / Web / Proceedings</span>
+                <strong>InnerSoft</strong>
+                <span>Leadership roles for the 1st International Workshop on InnerSource Software Development at ICSE.</span>
+              </div>
+            </li>
+            <li>
+              <time>2022</time>
+              <div>
+                <span class="role-label">Co-Chair</span>
+                <strong>MSR Publicity and Social Media</strong>
+                <span>19th Working Conference on Mining Software Repositories.</span>
+              </div>
+            </li>
+            <li>
+              <time>2022</time>
+              <div>
+                <span class="role-label">Proceedings Chair</span>
+                <strong>PROMISE</strong>
+                <span>International Conference on Predictive Models and Data Analytics in Software Engineering.</span>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="service-panel">
+          <h3>Program committee and reviewing roles</h3>
+          <ol class="service-items">
+            <li>
+              <time>2026</time>
+              <div>
+                <span class="role-label">Program Committee</span>
+                <strong>ESEC/FSE Tool Demonstrations; MSR Technical Papers</strong>
+              </div>
+            </li>
+            <li>
+              <time>2025</time>
+              <div>
+                <span class="role-label">Program Committee</span>
+                <strong>ICSE Research Track; MSR Technical Papers; AIware; BoatSE</strong>
+              </div>
+            </li>
+            <li>
+              <time>2024</time>
+              <div>
+                <span class="role-label">Program Committee</span>
+                <strong>ICSE Research Track; MSR Technical Papers; PROMISE; ICSME Registered Reports</strong>
+              </div>
+            </li>
+            <li>
+              <time>2023</time>
+              <div>
+                <span class="role-label">Program Committee</span>
+                <strong>ICSE Technical, Posters, and Artifact Evaluation; MSR Mining Challenge; ESEC/FSE Artifacts; ICSME Artifact Evaluation and ROSE Festival; PROMISE</strong>
+              </div>
+            </li>
+            <li>
+              <time>2022</time>
+              <div>
+                <span class="role-label">Program Committee / Advisor</span>
+                <strong>MSR Technical Papers and Shadow PC Advisor</strong>
+              </div>
+            </li>
+            <li>
+              <time>2021</time>
+              <div>
+                <span class="role-label">Program Committee</span>
+                <strong>MSR Technical Papers; OSS Papers</strong>
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+
+      <div class="service-panel community-service">
+        <h3>Community, journal reviewing, and memberships</h3>
+        <ul class="detail-list">
+          <li>
+            <strong>Panel service</strong>
+            <span>Panel member for the FM Vision 2030 workshop in Mexico City in 2023.</span>
+          </li>
+          <li>
+            <strong>Journal reviewing</strong>
+            <span>Reviewer for Empirical Software Engineering, ACM TOSEM, IEEE TSE, and IEEE Software.</span>
+          </li>
+          <li>
+            <strong>Professional memberships</strong>
+            <span>Member of ACM SIGSOFT, IEEE Computer Society, and InnerSource Commons.</span>
+          </li>
+          <li>
+            <strong>Community building</strong>
+            <span>Founding member of the Lero Open Source Program Office and former member of the Lero Diversity Committee.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Content copyright <span id="year">2026</span> Tapajit Dey. Built as a static GitHub Pages site.</p>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
 </body>
-
 </html>
